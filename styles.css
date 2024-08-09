@@ -1,0 +1,211 @@
+/* Beze změny, již bylo přidáno výše */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.intro {
+    text-align: center;
+    padding: 5em 1em;
+    background: #1abc9c;
+    color: white;
+    position: relative;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 0.5em 0 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75em 2em;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    margin: 0 0.5em; /* Přidání mezery mezi tlačítky */
+}
+
+.button:hover {
+    background-color: #1abc9c;
+}
+
+.categories {
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.categories h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.categories p {
+    margin-bottom: 2em;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.box {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.box.expanded {
+    transform: scale(1.2);
+}
+
+.box:hover {
+    background-color: #eaeaea;
+}
+
+.details {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.detail-content {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.detail-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.detail-content h3 {
+    margin-top: 0;
+}
+
+.specifications {
+    margin-top: 1em;
+}
+
+.specifications h4 {
+    margin-bottom: 0.5em;
+}
+
+.spec-box {
+    background: #f5f5f5;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.spec-box:hover {
+    background-color: #eaeaea;
+}
+
+.spec-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    padding: 0 1em;
+}
+
+.spec-details.show {
+    max-height: 500px;
+    opacity: 1;
+    padding: 1em;
+}
+
+.spec-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.spec-details li {
+    background: #fff;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.maintenance {
+    background-color: #ffffff;
+    padding: 3em 1em;
+    margin: 2em auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.maintenance h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #1abc9c;
+}
+
+.maintenance p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+.maintenance h3 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    color: #333;
+}
+
+.maintenance ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 2em;
+}
+
+.maintenance ul li {
+    margin-bottom: 1em;
+}
+
+.maintenance ul li strong {
+    color: #1abc9c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
